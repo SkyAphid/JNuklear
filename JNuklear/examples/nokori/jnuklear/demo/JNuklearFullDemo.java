@@ -19,7 +19,7 @@ import java.io.File;
 
 import nokori.jnuklear.Font;
 
-public class JNuklearExample extends NuklearProgram {
+public class JNuklearFullDemo extends NuklearProgram {
 	
 	private static final int WINDOW_WIDTH = 512;
 	private static final int WINDOW_HEIGHT = 512;
@@ -30,7 +30,7 @@ public class JNuklearExample extends NuklearProgram {
 	private NkRectPane rectPane;
 
 	public static void main(String[] args) {
-		NuklearProgram.start(new JNuklearExample(), args);
+		NuklearProgram.start(new JNuklearFullDemo(), args);
 	}
 	
 	@Override
