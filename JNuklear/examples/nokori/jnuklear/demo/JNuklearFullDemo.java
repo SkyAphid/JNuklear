@@ -27,6 +27,7 @@ public class JNuklearFullDemo extends NuklearProgram {
 	private static final int PANE_WIDTH = 400;
 	private static final int PANE_HEIGHT = 400;
 	
+	private Font font;
 	private NkRectPane rectPane;
 
 	public static void main(String[] args) {
@@ -111,9 +112,12 @@ public class JNuklearFullDemo extends NuklearProgram {
 	
 	@Override
 	public Font getInitialFont() {
-		return new Font(new File("font/NotoSans-Regular.ttf"), 18);
+		font = new Font(new File("font/NotoSans-Regular.ttf"), 18);
+		return font;
 	}
 	
 	@Override
-	protected void dispose() {}
+	protected void dispose() {
+		font.dispose();
+	}
 }

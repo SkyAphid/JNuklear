@@ -24,6 +24,7 @@ public class JNuklearHelloWorld extends NuklearProgram {
 	private static final int PANE_WIDTH = WINDOW_WIDTH/2;
 	private static final int PANE_HEIGHT = PANE_WIDTH;
 	
+	private Font font;
 	private NkRectPane rectPane;
 
 	public static void main(String[] args) {
@@ -61,12 +62,15 @@ public class JNuklearHelloWorld extends NuklearProgram {
 	
 	@Override
 	public Font getInitialFont() {
-		return new Font(new File("font/NotoSans-Regular.ttf"), 22);
+		font = new Font(new File("font/NotoSans-Regular.ttf"), 22);
+		return font;
 	}
 	
 	@Override
 	public void run(NuklearContext context) {}
 	
 	@Override
-	protected void dispose() {}
+	protected void dispose() {
+		font.dispose();
+	}
 }
