@@ -6,7 +6,7 @@ import org.lwjgl.opengl.*;
 import org.lwjgl.stb.*;
 import org.lwjgl.system.*;
 
-import nokori.util.IOUtil;
+import nokori.jnuklear.IOUtil;
 
 import java.io.*;
 import java.nio.*;

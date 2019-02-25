@@ -2,7 +2,7 @@
  * Copyright LWJGL. All rights reserved.
  * License terms: https://www.lwjgl.org/license
  */
-package nokori.util;
+package nokori.jnuklear;
 
 import org.lwjgl.*;
 

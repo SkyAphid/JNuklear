@@ -45,8 +45,6 @@ import org.lwjgl.stb.STBTTPackContext;
 import org.lwjgl.stb.STBTTPackedchar;
 import org.lwjgl.system.MemoryStack;
 
-import nokori.util.IOUtil;
-
 public class Font {
     
     private int fontHeight;
